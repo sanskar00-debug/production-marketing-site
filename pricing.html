@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledgerline Pricing Plans | Simple Transparent Tiers</title>
+    <meta name="description" content="Choose the perfect ledger automation plan for your company. No setup fees, transparent billing, and instant deployment.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Pricing Grid Layout Rules */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            align-items: stretch;
+        }
+        .price-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .price-card.featured {
+            border: 2px solid #2563eb;
+            position: relative;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.1);
+        }
+        .badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2563eb;
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+        .price-val {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin: 1.5rem 0;
+        }
+        .price-val span { font-size: 1rem; color: #64748b; font-weight: 400; }
+        .price-features {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+            text-align: left;
+            color: #475569;
+        }
+        .price-features li { margin-bottom: 0.75rem; display: flex; gap: 0.5rem; }
+        .price-btn {
+            margin-top: auto;
+            display: block;
+            background: #f1f5f9;
+            color: #0f172a;
+            text-decoration: none;
+            padding: 0.75rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .price-card.featured .price-btn {
+            background: #2563eb;
+            color: white;
+        }
+        .price-card.featured .price-btn:hover { background: #1d4ed8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <nav aria-label="Main Navigation">
+            <div class="logo">Ledgerline</div>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Menu">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="pricing.html" aria-current="page">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <h1>Simple Pricing Tied to Your Operations Scale</h1>
+            <p>Get immediate access to comprehensive automation mechanics with zero long-term lockout contracts.</p>
+        </section>
+
+        <section aria-label="Subscription Options Plans">
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <article class="price-card">
+                    <h2>Starter Plan</h2>
+                    <div class="price-val">$29<span>/mo</span></div>
+                    <ul class="price-features">
+                        <li>✓ Up to 50 Auto-Invoices</li>
+                        <li>✓ 1 Integrated Bank Ledger</li>
+                        <li>✓ Email Ticket Support</li>
+                    </ul>
+                    <a href="contact.html" class="price-btn">Get Started</a>
+                </article>
+
+                <!-- Plan 2 (Fea

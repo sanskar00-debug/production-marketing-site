@@ -181,3 +181,66 @@ footer a:hover { text-decoration: underline; }
     .hero h1 { font-size: 2rem; }
     .hero p { font-size: 1.1rem; }
 }
+
+/* --- Add this to your style.css file to make the form visible --- */
+
+.contact-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left; /* Aligns text inputs cleanly */
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+/* Explicit input styles to prevent collapse */
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #cbd5e1; /* Visible structural borders */
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #1e293b;
+    display: block;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* Visible primary action button */
+.submit-btn {
+    width: 100%;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
